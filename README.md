@@ -1,16 +1,63 @@
-# React + Vite
+# Web Development Project 7 - *Card Creater*
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Submitted by: **Ryan Lee**
 
-Currently, two official plugins are available:
+This web app: **Allows you to add your own cards to the Clash Royale Collection! Utilizes Supabase for card storage.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Time spent: **8** hours spent in total
 
-## React Compiler
+## Required Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The following **required** functionality is completed:
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [x] **The web app contains a page that features a create form to add a new crewmate**
+  - Users can name the crewmate
+  - Users can set the crewmate’s attributes by clicking on one of several values
+- [x] **The web app includes a summary page of all the user’s added crewmatese**
+  -  The web app contains a summary page dedicated to displaying all the crewmates the user has made so far
+  -  The summary page is sorted by creation date such that the most recently created crewmates appear at the top
+- [x] **A previously created crewmate can be updated from the list of crewmates in the summary page**
+  - Each crewmate has an edit button that will take users to an update form for the relevant crewmate
+  - Users can see the current attributes of their crewmate on the update form
+  - After editing the crewmate's attribute values using the form, the user can immediately see those changes reflected in the update form and on the summary page 
+- [x] **A previously created crewmate can be deleted from the crewmate list**
+  - Using the edit form detailed in the previous _crewmates can be updated_ feature, there is a button that allows users to delete that crewmate
+  - After deleting a crewmate, the crewmate should no longer be visible in the summary page
+  - [x] **Each crewmate has a direct, unique URL link to an info page about them**
+    - Clicking on a crewmate in the summary page navigates to a detail page for that crewmate
+    - The detail page contains extra information about the crewmate not included in the summary page
+    - Users can navigate to to the edit form from the detail page
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='./gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Replace this with whatever GIF tool you used! -->
+GIF created with Kap
+<!-- Recommended tools:
+[Kap](https://getkap.co/) for macOS
+[ScreenToGif](https://www.screentogif.com/) for Windows
+[peek](https://github.com/phw/peek) for Linux. -->
+
+## Notes
+
+The challenge was updating a card by collecting the id and updating rather than inserting to the Supabase Database.
+
+## License
+
+    Copyright [2025] [Ryan Lee]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
